@@ -1,0 +1,19 @@
+body {
+  height: 100%;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 25% 1fr;
+  grid-template-columns: 1fr;
+  font-family: "Ubuntu" sans-serif;
+}
+
+header {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  font-family: "Roboto Slab" serif;
+}
+
+body {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
