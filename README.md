@@ -22,6 +22,8 @@
 ```
 
 ## See it live
+Pick your palattes on Heroku: [https://palatable-palettes.herokuapp.com/](https://palatable-palettes.herokuapp.com/).
+
 ![A screen recording of the app](https://github.com/colehart/allyship/blob/master/src/assets/images/screenRecording.gif "App Screen Recording")
 
 ## Technologies Used
