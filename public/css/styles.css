@@ -6,8 +6,8 @@
   --bright-blue: #5d9cec;
   --bright-purple: #ac92eb;
   --charcoal: #434a54;
+  --med-gray: #e6e9ed;
 }
-/* var(--bright-green) */
 
 body {
   height: 100%;
@@ -15,7 +15,11 @@ body {
   display: grid;
   grid-template-rows: 25% 1fr;
   grid-template-columns: 1fr;
+  justify-items: center;
   font-family: "Ubuntu", sans-serif;
+  background-color: var(--charcoal);
+  color: var(--med-gray);
+  letter-spacing: 1px;
 }
 
 header {
@@ -25,7 +29,7 @@ header {
   font-weight: 700;
 }
 
-body {
+main {
   grid-row: 2 / 3;
   grid-column: 1 / 2;
 }
