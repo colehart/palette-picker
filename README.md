@@ -52,7 +52,7 @@ Palatable Palettes is a single page web app with different colors populating a g
 I wanted to emulate the [Coolors.co](https://coolors.co/464655-94958b-b7b6c1-d5cfe1-eddfef) Generate page for the main color palette portion. I also used the bare bones wireframes from the [project spec](http://frontend.turing.io/projects/palette-picker.html) to guide the project portion of the layout.
 
 ### Coolors.co
-![Sample Coolors Generate Page]('./public/assets/images/coolorsScreenshot.png' "Sample Coolors Generated Palette")
+![Sample Coolors Generate Page](./public/assets/images/coolorsScreenshot.png "Sample Coolors Generated Palette")
 
 ### Project Spec
 ![Project Spec Wireframe](http://frontend.turing.io/assets/images/palette-picker-wireframe.png "Project Spec Wireframe")
