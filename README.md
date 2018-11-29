@@ -1,10 +1,15 @@
-[![Waffle.io - Columns and their card count](https://badge.waffle.io/colehart/allyship.svg?columns=all)](https://waffle.io/colehart/allyship)
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/colehart/palette-picker.svg?columns=all)](https://waffle.io/colehart/palette-picker)
 
 # Palette Picker - Palatable Palettes
 
 ## A jQuery single page app to generate random colors, complete with Node.js, Express, and Knex.js backend. With, Palatable Palettes you can uniquely name projects, add and delete multiple palettes to each project, and use the same palettes across projects.
 
 ## How to Use
+
+## See it live
+Pick your palettes on Heroku: [https://palatable-palettes.herokuapp.com/](https://palatable-palettes.herokuapp.com/).
+
+![A screen recording of the app](https://github.com/colehart/allyship/blob/master/src/assets/images/screenRecording.gif "App Screen Recording")
 
 ### Developers:
 #### Install and Start Server
@@ -14,17 +19,19 @@
 
 * `npm start`
 
+#### Create Postgres Database and Run Migrations
+*  `psql CREATE DATABASE palettepickers`
+
+* `knex migrate:latest`
+
+* `knex seed:run`
+
 ### API Endpoints
 ```
 /api/v1/projects
 /api/v1/project/:project_id/palettes
 /api/v1/project/:project_id/palettes/:palette_id
 ```
-
-## See it live
-Pick your palattes on Heroku: [https://palatable-palettes.herokuapp.com/](https://palatable-palettes.herokuapp.com/).
-
-![A screen recording of the app](https://github.com/colehart/allyship/blob/master/src/assets/images/screenRecording.gif "App Screen Recording")
 
 ## Technologies Used
 - jQuery
