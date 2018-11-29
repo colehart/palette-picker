@@ -40,7 +40,7 @@ app.post('/api/v1/projects', (request, response) => {
     }))
 })
 
-app.get('/api/v1/project/:project_id/palettes', (request, response) => {
+app.get('/api/v1/projects/:project_id/palettes', (request, response) => {
   const { project_id } = request.params;
 
   database('palettes').where('project_id', project_id).select()
@@ -52,7 +52,7 @@ app.get('/api/v1/project/:project_id/palettes', (request, response) => {
     }))
 })
 
-app.post('/api/v1/project/:project_id/palettes', (request, response) => {
+app.post('/api/v1/projects/:project_id/palettes', (request, response) => {
   const palette = request.body;
 
   for(let requiredParam of [
@@ -81,26 +81,36 @@ app.post('/api/v1/project/:project_id/palettes', (request, response) => {
     }))
 })
 
+app.get('/api/v1/projects/:project_id/palettes/:palette_id', (request, response) => {
+  const { project_id, palette_id } = request.params;
 
+  database('palettes').where({
+    'id': palette_id,
+    'project_id': project_id
+  }).select()
+    .then(palette => response.status(200).json(
+      palette
+    ))
+    .catch(error => response.status(500).json({
+      error: `Error fetching palette: ${error.message}`
+    }))
+})
 
+app.delete('/api/v1/projects/:project_id/palettes/:palette_id', (request, response) => {
+  const { project_id, palette_id } = request.params;
 
-/*
-projects
-  - /api/v1/projects
-    - get (view all existing projects)
-    - post (create a new project)
-*/
-
-/*
-palettes
-  - /api/v1/project/:project_id/palettes
-    - get (view all existing palettes associated with particular project)
-    - post (create new palette associated with particular project)
-
-  - /api/v1/project/:project_id/palettes/:palette_id
-    - get (view specific palette associated with particular project)
-    - delete (delete specific palette associated with particular project)
-*/
+  database('palettes').where({
+    'id': palette_id,
+    'project_id': project_id
+  }).delete()
+    .then(palette => response.status(200).json({
+      palette,
+      message: `Palette has been deleted from project #${project_id}.`
+    }))
+    .catch(error => response.status(500).json({
+      error: `Error deleting palette: ${error.message}`
+    }))
+})
 
 app.use((request, response, next) => {
   response.status(404).send('Sorry, the path you entered does not exist.')
