@@ -1,16 +1,28 @@
+:root {
+  --grass-green: #a0d468;
+  --bright-green: #2D3142;
+  --blue-green: #48cfad;
+  --sky-blue: #4fc2e9;
+  --bright-blue: #5d9cec;
+  --bright-purple: #ac92eb;
+  --charcoal: #434a54;
+}
+/* var(--bright-green) */
+
 body {
   height: 100%;
   width: 100vw;
   display: grid;
   grid-template-rows: 25% 1fr;
   grid-template-columns: 1fr;
-  font-family: "Ubuntu" sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 header {
   grid-row: 1 / 2;
   grid-column: 1 / 2;
-  font-family: "Roboto Slab" serif;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
 }
 
 body {
