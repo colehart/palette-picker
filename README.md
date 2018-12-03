@@ -5,11 +5,9 @@
 ## A jQuery single page app to generate random colors, complete with Node.js, Express, and Knex.js backend. With, Palatable Palettes you can uniquely name projects, add and delete multiple palettes to each project, and use the same palettes across projects.
 
 ## How to Use
-
-## See it live
 Pick your palettes on Heroku: [https://palatable-palettes.herokuapp.com/](https://palatable-palettes.herokuapp.com/).
 
-![A screen recording of the app](https://github.com/colehart/allyship/blob/master/src/assets/images/screenRecording.gif "App Screen Recording")
+![A screen recording of the app](https://na.com "App Screen Recording")
 
 ### Developers:
 #### Install and Start Server
@@ -46,7 +44,7 @@ Project spec can be found [here](http://frontend.turing.io/projects/palette-pick
 Palatable Palettes is a single page web app with different colors populating a generator. You can uniquely name projects, add and delete multiple palettes to each project, and use the same palettes across projects.
 
 ### Welcome Page
-![Welcome Page Wireframe](https://github.com/colehart/allyship/blob/master/src/assets/images/desktop%E2%80%93%201.png "Welcome Page Wireframe")
+![Welcome Page Wireframe](https://.png "Welcome Page Wireframe")
 
 ## Design Inspiration
 I wanted to emulate the [Coolors.co](https://coolors.co/464655-94958b-b7b6c1-d5cfe1-eddfef) Generate page for the main color palette portion. I also used the bare bones wireframes from the [project spec](http://frontend.turing.io/projects/palette-picker.html) to guide the project portion of the layout.
