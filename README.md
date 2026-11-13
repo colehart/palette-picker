@@ -1,13 +1,9 @@
-[![Waffle.io - Columns and their card count](https://badge.waffle.io/colehart/palette-picker.svg?columns=all)](https://waffle.io/colehart/palette-picker)
-
 # Palette Picker - Palatable Palettes
 
 ## A jQuery single page app to generate random colors, complete with Node.js, Express, and Knex.js backend. With, Palatable Palettes you can uniquely name projects, add and delete multiple palettes to each project, and use the same palettes across projects.
 
 ## How to Use
-Pick your palettes on Heroku: [https://palatable-palettes.herokuapp.com/](https://palatable-palettes.herokuapp.com/).
-
-![A screen recording of the app](https://na.com "App Screen Recording")
+_The hosted demo was retired when Heroku ended its free tier in 2022. Run it locally with the steps below._
 
 ### Developers:
 #### Install and Start Server
